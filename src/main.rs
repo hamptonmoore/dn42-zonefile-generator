@@ -14,10 +14,13 @@ fn main() -> io::Result<()>{
 
     let mut zonefile = BufWriter::new(File::create(zonefile).expect("Count not open output file for zonefile"));
 
-    zonefile.write_all(b"$ORIGIN .\n$TTL 3600\n")?;
+    zonefile.write_all(b"$ORIGIN .\n$TTL 300\ndn42. IN SOA once.i.get.a.tld.for.zone me.hampton.pw (1 7200 360 84600 300)\n")?;
 
     for path in paths {
         if let Ok(path) = path {
+            if !path.path().to_str().unwrap().ends_with("dn42") {
+                continue;
+            }
             let file = File::open(path.path()).unwrap();
             let buf_reader = BufReader::new(file);
             let mut file_name: String = String::new();
