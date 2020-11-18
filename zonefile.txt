@@ -5,6 +5,8 @@ recursive-servers.dn42.	IN	NS	b.delegation-servers.dn42.
 recursive-servers.dn42.	IN	NS	j.delegation-servers.dn42.
 recursive-servers.dn42.	IN	NS	k.delegation-servers.dn42.
 recursive-servers.dn42.	IN	NS	h.delegation-servers.dn42.
+recursive-servers.dn42.	IN	DS	64441 10 2 b5a3838ac45872120ad6f0da3b8b89c0b468a0120be4fa71fc6b24b0a15b9c7f
+recursive-servers.dn42.	IN	DS	3096 10 2 7df78bd90c7a6f48608df266d94687c833e2cc6c65ffd7b2aadb906612116430
 prooops.dn42.	IN	NS	ns0.bodems.dn42.
 prooops.dn42.	IN	NS	ns1.bodems.dn42.
 krstn.dn42.	IN	NS	ns1.krstn.dn42.
@@ -84,9 +86,12 @@ registry-sync.dn42.	IN	NS	b.delegation-servers.dn42.
 registry-sync.dn42.	IN	NS	j.delegation-servers.dn42.
 registry-sync.dn42.	IN	NS	k.delegation-servers.dn42.
 registry-sync.dn42.	IN	NS	h.delegation-servers.dn42.
+registry-sync.dn42.	IN	DS	64441 10 2 21d352d211b602ca5cb28cc7367c1bf8836d2a9bb27afb21605e317584fb1f2c
+registry-sync.dn42.	IN	DS	3096 10 2 da79bb80c7f51d847263e3f285dc49d3b42476bea65cbf5d59644c41f69f7145
 moecast.dn42.	IN	NS	ns1.moecast.dn42.
 ns1.moecast.dn42.	IN	A	172.23.89.1
 ns1.moecast.dn42.	IN	AAAA	fd89:35db:0fc0::1
+moecast.dn42.	IN	DS	11999 8 2 3B960D74068771B034AD6A8B9F454E3B359545812416AEB4EE72BBA6B8036EA4
 hax404.dn42.	IN	NS	chero.hax404.dn42.
 chero.hax404.dn42.	IN	A	172.23.136.65
 hax404.dn42.	IN	NS	froschschenkel.hax404.dn42.
@@ -105,6 +110,7 @@ ns1.xs4me.dn42.	IN	AAAA	fd9c:cab6:54f3::1
 xs4me.dn42.	IN	NS	ns2.xs4me.dn42.
 ns2.xs4me.dn42.	IN	A	172.21.74.88
 ns2.xs4me.dn42.	IN	AAAA	fd9c:cab6:54f3:1::1
+xs4me.dn42.	IN	DS	49084 8 2 F861E2272D488E14B7C8BDD62C594FBC50AB7A2C38DFB3DA1E69FFDBEC334CF4
 lotus.dn42.	IN	NS	seed.lotus.dn42.
 seed.lotus.dn42.	IN	A	172.22.111.67
 seed.lotus.dn42.	IN	AAAA	fd42:4242:2201::5eed
@@ -218,6 +224,7 @@ fflw.	IN	NS	10.0.66.10.ipv4.registry-sync.dn42.
 fflw.	IN	NS	6.6.0.1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.f.d.d.f.ipv6.registry-sync.dn42.
 dnssec-failed.dn42.	IN	NS	ns1.as4242420119.dn42.
 dnssec-failed.dn42.	IN	NS	ns2.as4242420119.dn42.
+dnssec-failed.dn42.	IN	DS	36067 10 2 E9FACE1FBE06CF914850C9E1E522638DB973207F77676C88FB881F7BE35615B2
 agrume.dn42.	IN	NS	ns1.agrume.dn42.
 ns1.agrume.dn42.	IN	A	172.20.29.161
 ns1.agrume.dn42.	IN	AAAA	fd42:4242:2408:53::1
@@ -300,6 +307,7 @@ ns1.psm.dn42.	IN	AAAA	fd8a:b0f1:babe::82
 burble.dn42.	IN	NS	ns1.burble.dn42.
 ns1.burble.dn42.	IN	A	172.20.129.1
 ns1.burble.dn42.	IN	AAAA	fd42:4242:2601:ac53::1
+burble.dn42.	IN	DS	61857 13 2 bd35e3efe3325d2029fb652e01604a48b677cc2f44226eeabee54b456c67680c
 birb.dn42.	IN	NS	ns1.birb.dn42.
 ns1.birb.dn42.	IN	A	172.20.168.70
 ns1.birb.dn42.	IN	AAAA	fd42:c0ff:eeee:2000::
@@ -363,6 +371,8 @@ dn42.	IN	NS	b.delegation-servers.dn42.
 dn42.	IN	NS	j.delegation-servers.dn42.
 dn42.	IN	NS	k.delegation-servers.dn42.
 dn42.	IN	NS	h.delegation-servers.dn42.
+dn42.	IN	DS	64441 10 2 6dadda00f5986bd26fe4f162669742cf7eba07d212b525acac9840ee06cb2799
+dn42.	IN	DS	3096 10 2 b7c687a99bee60e172ea439bd2d3087b1d970916575db9c1cb591b7ee15d8cb1
 tris.dn42.	IN	NS	ns1.tris.dn42.
 ns1.tris.dn42.	IN	A	172.22.186.66
 ns1.tris.dn42.	IN	AAAA	fdee:d21b:6b8b:ffff::3
@@ -869,6 +879,8 @@ ns2.tan.dn42.	IN	AAAA	fd42:4242:2990::2
 ziis.dn42.	IN	NS	ns1.ziis.dn42.
 ns1.ziis.dn42.	IN	A	172.21.89.5
 ns1.ziis.dn42.	IN	AAAA	fd5e:86a9:f675::53
+ziis.dn42.	IN	DS	49460 13 1 fc6df13872bb8ebb06d1b89ea83cbd877bf8655d
+ziis.dn42.	IN	DS	49460 13 2 169b36a0957df23ed2f1ca3cb89d2f7951f8bbec934832e52512fa99a24c422a
 porn.dn42.	IN	NS	ns.porn.dn42.
 ns.porn.dn42.	IN	A	172.20.198.1
 ns.porn.dn42.	IN	AAAA	fd19:d101:719a:a::1
@@ -894,6 +906,12 @@ rdap.dn42.	IN	NS	ns1.rdap.dn42.
 ns1.rdap.dn42.	IN	AAAA	2001:67c:708:101::2
 rdap.dn42.	IN	NS	ns2.rdap.dn42.
 ns2.rdap.dn42.	IN	A	172.22.70.69
+rdap.dn42.	IN	DS	41915 15 1 980F56629AD0DC5684FA570662AEE3220C8DEEA2
+rdap.dn42.	IN	DS	41915 15 2 5020A2F7935B38E86402E19B2A54F0E62359ABED7462628D0E13F415 BC37557A
+rdap.dn42.	IN	DS	56055 7 1 FBCD81123C0F5A5D356D2DC3A3C9080C9FADC43E
+rdap.dn42.	IN	DS	56055 7 2 0E7C870EA1FA206CA47A64EFF4FBEB320C14BA401B2CB06797D863F7 AE8152B7
+rdap.dn42.	IN	DS	43864 8 1 BCEAF3B229E84EE18808624CCA21ED17B398BC00
+rdap.dn42.	IN	DS	43864 8 2 CD6012770F4CCE3B18612BEA327AAA8D07B2FD48921578E7ED44BBD6 7C26B0D0
 jabber.dn42.	IN	NS	ns1.grmml.dn42.
 jabber.dn42.	IN	NS	ns2.grmml.dn42.
 jabber.dn42.	IN	NS	ns3.grmml.dn42.
@@ -919,6 +937,7 @@ as4242420119.dn42.	IN	NS	ns1.as4242420119.dn42.
 ns1.as4242420119.dn42.	IN	A	172.20.1.252
 as4242420119.dn42.	IN	NS	ns2.as4242420119.dn42.
 ns2.as4242420119.dn42.	IN	A	172.20.1.253
+as4242420119.dn42.	IN	DS	27958 13 2 8ca148aa8598e8ca22d8989ef7598df8d3d78dcb1053f82e67ca9969832eefcd
 rzl.	IN	NS	ns1.rzl.g.nic.dn42.
 as4242422027.dn42.	IN	NS	ns1.as4242422027.dn42.
 ns1.as4242422027.dn42.	IN	A	172.23.222.67
@@ -1125,6 +1144,7 @@ ns1.caesia.dn42.	IN	A	172.20.172.30
 tor.dn42.	IN	NS	ns1.gatuno.dn42.
 asn.dn42.	IN	NS	ns1.xs4me.dn42.
 asn.dn42.	IN	NS	ns2.xs4me.dn42.
+asn.dn42.	IN	DS	3715 8 2 C11E228BB26125A5BA1E43D5EBA82CE79D8B42767C55E32C904DF16F379DD32A
 phowork.dn42.	IN	NS	ns1.phowork.dn42.
 ns1.phowork.dn42.	IN	A	172.20.29.226
 phowork.dn42.	IN	NS	ns2.phowork.dn42.
@@ -1257,6 +1277,9 @@ leroy.dn42.	IN	NS	ns2.dns.dn42.
 prauscher.dn42.	IN	NS	nameserver.prauscher.dn42.
 nameserver.prauscher.dn42.	IN	A	172.22.153.230
 nameserver.prauscher.dn42.	IN	AAAA	fdc1:31f:b14f:300::140
+prauscher.dn42.	IN	DS	61251 13 1 ba6ad7f9ff4e6db85d55592ffbaf442d6e73697a
+prauscher.dn42.	IN	DS	61251 13 2 c74a340691a38dc65dc7a51d68d489d4cb7a77e9b4e04d15e40fc6b1d66e45e2
+prauscher.dn42.	IN	DS	61251 13 4 2cbb3e8e3a15d72076571a514d7d27d4beb5c597f04fbdb8c0c30c94def0a637a7584bca1fc525fddfe3a3837a4ede73
 jgn.dn42.	IN	NS	ns1.jgn.dn42.
 ns1.jgn.dn42.	IN	A	172.22.181.53
 ns1.jgn.dn42.	IN	AAAA	fd68:fdcc:7a1a::53
@@ -1295,6 +1318,8 @@ ffhm.	IN	NS	1.96.11.10.ipv4.registry-sync.dn42.
 ns.2950.dn42.	IN	A	172.23.234.254
 ns.2950.dn42.	IN	AAAA	fd42:2950:203:142::a6a
 fox.dn42.	IN	NS	h.delegation-servers.dn42.
+fox.dn42.	IN	DS	28104 15 2 d58969c6a8371cb5a37e04071833319175669f4092e5f276482186489ee0a3c9
+fox.dn42.	IN	DS	28104 15 4 69fbf6cef10b4cb3df71d9e38865e6264502e94fb635f9f69aa5baf5f109360233a40aaa076836200d087368542956f1
 max.dn42.	IN	NS	ns1.max.dn42.
 ns1.max.dn42.	IN	AAAA	fd1f:ce1e:ff42:53::1
 max.dn42.	IN	NS	ns2.max.dn42.
@@ -1477,6 +1502,9 @@ ns2.lantian.dn42.	IN	AAAA	fdbc:f9dc:67ad::dd:c85a:8a93
 lantian.dn42.	IN	NS	ns3.lantian.dn42.
 ns3.lantian.dn42.	IN	A	172.22.76.190
 ns3.lantian.dn42.	IN	AAAA	fdbc:f9dc:67ad::cc:433e:da3b
+lantian.dn42.	IN	DS	20109 13 1 390386be8b1112dcf5b476286b5e64ff098200b0
+lantian.dn42.	IN	DS	20109 13 2 28206d72e41a4f3b19e48eeba571cb2da202a80af19e217bfad34ce976af0b51
+lantian.dn42.	IN	DS	20109 13 4 8dc4cb9741a6eb7b40016a1aa8334a4380d55d7d2f2648f486bb12fad2836d453879de6fc0b20a8f772dccbe0c45d82a
 dkjoker.dn42.	IN	NS	ns1.dkjoker.dn42.
 ns1.dkjoker.dn42.	IN	A	172.23.231.64
 ns1.dkjoker.dn42.	IN	AAAA	fd91:7b3d:8d19::6
@@ -1607,6 +1635,7 @@ ns1.mebus.dn42.	IN	AAAA	fd88:c7e:c7b7::1
 fralinsky.dn42.	IN	NS	ns.fralinsky.dn42.
 ns.fralinsky.dn42.	IN	A	172.20.44.1
 ns.fralinsky.dn42.	IN	AAAA	fdd3:8430:5ba1:1::1
+fralinsky.dn42.	IN	DS	36359 8 2 0A14D154042A561E8B45FDE5D7300B0EDDE01667451E8F5C61490ECED8B3B355
 florianb.dn42.	IN	NS	ns01.florianb.dn42.
 ns01.florianb.dn42.	IN	A	172.21.125.1
 florianb.dn42.	IN	NS	ns02.florianb.dn42.
@@ -1643,6 +1672,8 @@ ns1.robotham.dn42.	IN	A	172.20.31.10
 robotham.dn42.	IN	NS	ns2.robotham.dn42.
 ns2.robotham.dn42.	IN	A	172.20.31.10
 koala.dn42.	IN	NS	h.delegation-servers.dn42.
+koala.dn42.	IN	DS	63771 15 2 6741668fcd31dcd9015d53edac53a50d77a509d986c876424db883895749a108
+koala.dn42.	IN	DS	63771 15 4 254572571e1f213a9df9d87f33564f7c10e7c138774398f3a7880d30134ae855d0a536a6c8ecfb1180e3afa7590917ee
 splash.dn42.	IN	NS	ns1.splash.dn42.
 ns1.splash.dn42.	IN	A	172.20.161.254
 ffggrz.	IN	NS	11.0.181.10.ipv4.registry-sync.dn42.
@@ -1673,6 +1704,7 @@ searx.dn42.	IN	NS	ns2.lossy-network.dn42.
 collector.dn42.	IN	NS	ns1.burble.dn42.
 ns1.burble.dn42.	IN	A	172.20.129.1
 ns1.burble.dn42.	IN	AAAA	fd42:4242:2601:ac53::1
+collector.dn42.	IN	DS	22878 13 2 60c4978bc93e66d7bfd04b7dfef20289770be9b2f0a37d52e604c88397858745
 fmie.	IN	NS	f.f.f.f.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.8.5.3.0.8.7.6.0.1.0.0.2.ipv6.registry-sync.dn42.
 fmie.	IN	NS	e.f.f.f.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.8.5.3.0.8.7.6.0.1.0.0.2.ipv6.registry-sync.dn42.
 kilobyte.dn42.	IN	NS	ns1.kilobyte.dn42.
@@ -1698,6 +1730,8 @@ j.delegation-servers.dn42.	IN	AAAA	fd42:5d71:219:1:216:3eff:fe1e:22d6
 j.delegation-servers.dn42.	IN	A	172.20.1.254
 delegation-servers.dn42.	IN	NS	h.delegation-servers.dn42.
 h.delegation-servers.dn42.	IN	AAAA	fda6:2474:15a4::54
+delegation-servers.dn42.	IN	DS	64441 10 2 2b19d6fc6a6efa3218c61d84ad95a3c63b6ed988e2ae0bd7c8dcb91fe5ec7fa8
+delegation-servers.dn42.	IN	DS	3096 10 2 34a45a0dcd8bbf26f8ba466fed595f39858b6f3224d41210f90600689c810149
 chaostreff.dn42.	IN	NS	ns0.at.dn42.
 mpls.dn42.	IN	NS	ns.nop.dn42.
 ddev.dn42.	IN	NS	ns1.ddev.dn42.
@@ -1766,6 +1800,8 @@ hex.dn42.	IN	NS	ns1.hex.dn42.
 ns1.hex.dn42.	IN	AAAA	fda6:2474:15a4:445e::1
 hex.dn42.	IN	NS	ns2.hex.dn42.
 ns2.hex.dn42.	IN	AAAA	fda6:2474:15a4:22f7::1
+hex.dn42.	IN	DS	47871 15 2 0e57df94f53f8f7e904bcb71543833b74ed90993367c80b2b39f6090a570c8b5
+hex.dn42.	IN	DS	47871 15 4 8bad58d45005d62258116d784f4e4bfa05379549290329e85729cd5ca9fee20c7d29942aed5dfb2892dc55eaa93646b3
 fleeb.dn42.	IN	NS	ns1.szf.dn42.
 gcc.dn42.	IN	NS	ns1.gcc.dn42.
 ns1.gcc.dn42.	IN	A	172.22.124.1
@@ -1942,6 +1978,8 @@ ns1.mgl.dn42.	IN	AAAA	fd9a:5c:48::53:1
 mgl.dn42.	IN	NS	ns2.mgl.dn42.
 ns2.mgl.dn42.	IN	A	172.20.29.2
 ns2.mgl.dn42.	IN	AAAA	fd9a:5c:48::53:2
+mgl.dn42.	IN	DS	64076 13 2 60e5dfb91fb955500f8aa0af871a03fa0c67cff205534a04914b450198fea497
+mgl.dn42.	IN	DS	64076 13 4 e77a5039aa2ce6c734e83f1c7ae9b05147795e6465ca969e4a52f2cc8fb17d388416b91861ecf17a6da27f62d4ee165f
 villisek.dn42.	IN	NS	ns1.villisek.dn42.
 ns1.villisek.dn42.	IN	A	172.20.149.17
 ns1.villisek.dn42.	IN	AAAA	fd98:308:41fc::1
@@ -2081,6 +2119,9 @@ nic.dn42.	IN	NS	rakta.fra.xuu.dn42.
 nia.dn42.	IN	NS	ns.nia.dn42.
 ns.nia.dn42.	IN	AAAA	fd00:1926:817:53::1
 ns.nia.dn42.	IN	A	172.20.158.129
+nia.dn42.	IN	DS	12390 13 1 d9633930d4741adb9be4239d37ca808e506ec678
+nia.dn42.	IN	DS	12390 13 2 e9e9f059c4818e45721453455c256f0ff673fc69f7e643ee37b50aa77f689c26
+nia.dn42.	IN	DS	12390 13 4 00d9e8ac2c47de3240100e36a226fa0d67613d44703642b5f3b6b4b31eba488765e92fcb57a4f1dd408d653347596159
 xn--ls8h.dn42.	IN	NS	ns1.fnord.dn42.
 yangfl.dn42.	IN	NS	ns1.yangfl.dn42.
 ns1.yangfl.dn42.	IN	A	172.22.127.1

@@ -26,24 +26,31 @@ fn main() -> io::Result<()>{
             for line in buf_reader.lines() {
                 if let Ok(line) = line {
                     let line_split: Vec<String> = line.split_whitespace().map(|s| s.to_string()).collect();
-                    if line_split[0] == "domain:" {
-                        file_name = force_fqdn(line_split[1].clone());
-                    }
-                    if line_split[0] == "nserver:" {
-                        let ns: String = force_fqdn(line_split[1].clone());
-                        if !ns.eq(&name_server){
-                            add_record(&mut zonefile, file_name.clone(), "NS", ns.clone())?;
-                            name_server = ns.clone();
-                        }
 
-                        if line_split.len() == 3 {
-                            let ip: String = line_split[2].clone();
-                            if ip.contains(":") {
-                                add_record(&mut zonefile, ns.clone(), "AAAA", ip.clone())?;
-                            } else {
-                                add_record(&mut zonefile, ns.clone(), "A", ip.clone())?;
+                    match line_split[0].as_str() {
+                        "domain:" => {
+                            file_name = force_fqdn(line_split[1].clone());
+                        }
+                        "nserver:" => {
+                            let ns: String = force_fqdn(line_split[1].clone());
+                            if !ns.eq(&name_server){
+                                add_record(&mut zonefile, file_name.clone(), "NS", ns.clone())?;
+                                name_server = ns.clone();
+                            }
+
+                            if line_split.len() == 3 {
+                                let ip: String = line_split[2].clone();
+                                if ip.contains(":") {
+                                    add_record(&mut zonefile, ns.clone(), "AAAA", ip.clone())?;
+                                } else {
+                                    add_record(&mut zonefile, ns.clone(), "A", ip.clone())?;
+                                }
                             }
                         }
+                        "ds-rdata:" => {
+                            add_record(&mut zonefile, file_name.clone(), "DS", line.split("ds-rdata:").map(|s| s.to_string()).nth(1).unwrap().to_string().clone().trim().parse().unwrap())?;
+                        }
+                        _ => {}
                     }
                 }
             }
