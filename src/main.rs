@@ -51,7 +51,8 @@ fn main() -> io::Result<()>{
                             }
                         }
                         "ds-rdata:" => {
-                            add_record(&mut zonefile, file_name.clone(), "DS", line.split("ds-rdata:").map(|s| s.to_string()).nth(1).unwrap().to_string().clone().trim().parse().unwrap())?;
+                            let (_start, dsrecord) = line.split_at(10);
+                            add_record(&mut zonefile, file_name.clone(), "DS", dsrecord.trim().parse().unwrap())?;
                         }
                         _ => {}
                     }
