@@ -52,7 +52,7 @@ fn main() -> io::Result<()>{
                         }
                         "ds-rdata:" => {
                             let (_start, dsrecord) = line.split_at(10);
-                            add_record(&mut zonefile, file_name.clone(), "DS", dsrecord.trim().parse().unwrap())?;
+                            add_record(&mut zonefile, file_name.clone(), "DS", dsrecord.trim().to_string())?;
                         }
                         _ => {}
                     }
