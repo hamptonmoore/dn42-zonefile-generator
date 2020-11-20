@@ -37,22 +37,22 @@ fn main() -> io::Result<()>{
                         "nserver:" => {
                             let ns: String = force_fqdn(line_split[1].clone());
                             if !ns.eq(&name_server){
-                                add_record(&mut zonefile, file_name.clone(), "NS", ns.clone())?;
+                                add_record(&mut zonefile, &file_name, "NS", &ns)?;
                                 name_server = ns.clone();
                             }
 
                             if line_split.len() == 3 {
                                 let ip: String = line_split[2].clone();
                                 if ip.contains(":") {
-                                    add_record(&mut zonefile, ns.clone(), "AAAA", ip.clone())?;
+                                    add_record(&mut zonefile, &ns, "AAAA", &ip)?;
                                 } else {
-                                    add_record(&mut zonefile, ns.clone(), "A", ip.clone())?;
+                                    add_record(&mut zonefile, &ns, "A", &ip)?;
                                 }
                             }
                         }
                         "ds-rdata:" => {
                             let (_start, dsrecord) = line.split_at(10);
-                            add_record(&mut zonefile, file_name.clone(), "DS", dsrecord.trim().to_string())?;
+                            add_record(&mut zonefile, &file_name, "DS", dsrecord.trim())?;
                         }
                         _ => {}
                     }
@@ -66,12 +66,12 @@ fn main() -> io::Result<()>{
     Ok(())
 }
 
-fn add_record(buffer: &mut BufWriter<File>, domain: String, record_type: &str, data: String) -> io::Result<()>{
-    buffer.write_all(domain.as_bytes())?;
+fn add_record(buffer: &mut BufWriter<File>, domain: &str, record_type: &str, data: &str) -> io::Result<()>{
+    buffer.write_all(domain.as_ref())?;
     buffer.write_all(b"\tIN\t")?;
-    buffer.write_all(record_type.as_bytes())?;
+    buffer.write_all(record_type.as_ref())?;
     buffer.write_all(b"\t")?;
-    buffer.write_all(data.as_bytes())?;
+    buffer.write_all(data.as_ref())?;
     buffer.write_all(b"\n")?;
 
     Ok(())
